@@ -15,15 +15,15 @@ modules:
   # - name: sapui5gitdeploy-srv
   #   type: nodejs
   #   path: gen/srv
-  #   parameters:
-  #     instances: 1
-  #     buildpack: nodejs_buildpack
-  #   build-parameters:
-  #     builder: npm-ci
-  #   provides:
-  #     - name: srv-api # required by consumers of CAP services (e.g. approuter)
-  #       properties:
-  #         srv-url: ${default-url}
-  #   requires: []
+    parameters:
+      instances: 1
+      buildpack: nodejs_buildpack
+    build-parameters:
+      builder: npm-ci
+    provides:
+      - name: srv-api # required by consumers of CAP services (e.g. approuter)
+        properties:
+          srv-url: ${default-url}
+    requires: []
 
 resources: []
