@@ -3,7 +3,7 @@ run-name: Release Bookshop
 on:
   push:
     branches:
-      - "main"
+      - "origin"
 jobs:
   deploy:
     runs-on: ubuntu-latest
